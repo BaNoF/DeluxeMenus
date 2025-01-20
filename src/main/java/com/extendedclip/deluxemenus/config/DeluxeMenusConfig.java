@@ -1221,8 +1221,6 @@ public class DeluxeMenusConfig {
             if (!config.contains(option)) {
                 return;
             }
-
-            plugin.debug(DebugLevel.HIGHEST, Level.WARNING, String.format("Option '%s' of item '%s' in menu '%s' is deprecated and will be removed in the future. Replace it with item_flags: [%s].", option, config.getName(), menuName, itemFlag));
         };
 
         oldItemFlagOptionCheck.accept("hide_attributes", ItemFlag.HIDE_ATTRIBUTES);

@@ -593,6 +593,14 @@ public class MenuItemOptions {
         public MenuItemOptionsBuilder hideAttributes(final boolean hideAttributes) {
             if (hideAttributes) {
                 this.itemFlags.add(ItemFlag.HIDE_ATTRIBUTES);
+                this.itemFlags.add(ItemFlag.HIDE_DYE);
+            }
+            return this;
+        }
+        @Deprecated()
+        public MenuItemOptionsBuilder hideDye(final boolean hideAttributes) {
+            if (hideAttributes) {
+                this.itemFlags.add(ItemFlag.HIDE_DYE);
             }
             return this;
         }
